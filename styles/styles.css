@@ -127,9 +127,6 @@ p {
 	.container {
 		padding: 0 2rem;
 	}
-	/* .heroTitle .title01 {
-    font-size: 25px;
-  } */
 	.cardContainer {
 		grid-template-columns: repeat(1, minMax(0, 100%));
 		grid-template-rows: auto;
