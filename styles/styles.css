@@ -1,0 +1,119 @@
+:root {
+	--primaryRed: hsl(0, 78%, 62%);
+	--primaryCyan: hsl(180, 62%, 55%);
+	--primaryOrange: hsl(34, 97%, 64%);
+	--primaryBlue: hsl(212, 86%, 64%);
+	--neautralDarkBlue: hsl(234, 12%, 34%);
+	--neautralGrayishBlue: hsl(229, 6%, 66%);
+	--neautralLightGrayishBlue: hsl(0, 0%, 98%);
+
+	--mobile: 375px;
+	--desktop: 1440px;
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url('https://fonts.google.com/specimen/Poppins');
+}
+
+body {
+	color: var(--neautralDarkBlue);
+	font-size: 15px;
+	font-family: 'Poppins', sans-serif;
+}
+
+p {
+	color: var(--neautralGrayishBlue);
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 4rem;
+	max-width: 1440px;
+}
+
+.hero {
+	display: flex;
+	height: 100vh;
+	padding: 5rem 0;
+	flex-direction: column;
+}
+
+.heroTitle {
+	margin-bottom: 4rem;
+	text-align: center;
+}
+
+.heroTitle .title01 {
+	margin-bottom: 1rem;
+	font-size: 36px;
+	font-weight: 200;
+}
+
+.heroTitle .title01 span {
+	font-weight: 600;
+}
+
+.cardContainer {
+	display: grid;
+	grid-template-columns: repeat(3, 350px);
+	grid-template-rows: 1fr 1fr;
+	gap: 30px;
+	justify-content: center;
+}
+
+.card {
+	position: relative;
+	width: 100%;
+	height: 250px;
+	padding: 2rem;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 8px 8px 5px 1px #dddddd42;
+}
+
+.card h3 {
+	margin-bottom: 0.5rem;
+}
+
+.card .cardIcon {
+	position: absolute;
+	right: 2rem;
+	bottom: 2.05rem;
+}
+
+.single-card {
+	grid-column: 1 / 2;
+	grid-row: 1 / span 2;
+	align-self: center;
+}
+
+.double-card {
+	grid-column: 2 / 2;
+}
+
+.single-card:last-child {
+	grid-column: 3 / 4;
+	grid-row: 1 / span 2;
+}
+
+.cardSupervisor {
+	border-top: 3px solid var(--primaryCyan);
+}
+.cardTeamBuilder {
+	border-top: 3px solid var(--primaryRed);
+}
+.cardKarma {
+	border-top: 3px solid var(--primaryOrange);
+}
+.cardCalculator {
+	border-top: 3px solid var(--primaryBlue);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
