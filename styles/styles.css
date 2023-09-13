@@ -131,16 +131,19 @@ p {
 	.wrapper {
 		padding: 0 2rem;
 	}
+}
+
+@container (max-width: 730px) {
 	.cardContainer {
-		grid-template-columns: repeat(1, minMax(0, 100%));
+		grid-template-columns: repeat(1, minMax(0, 350px));
 		grid-template-rows: auto;
 		gap: 23px;
 	}
 	.card {
 		display: flex;
 		height: auto;
-		flex-direction: column;
 		padding: 1.5rem;
+		flex-direction: column;
 	}
 	.card p {
 		font-size: clamp(13px, 2vw, 15px);
