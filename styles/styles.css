@@ -11,10 +11,10 @@
 	--desktop: 1440px;
 }
 
-@font-face {
+/* @font-face {
 	font-family: Poppins;
 	src: url('https://fonts.google.com/specimen/Poppins');
-}
+} */
 
 body {
 	color: var(--neautralDarkBlue);
@@ -26,11 +26,16 @@ p {
 	color: var(--neautralGrayishBlue);
 }
 
-.container {
+.wrapper {
 	display: block;
 	margin: 0 auto;
 	padding: 0 4rem;
 	max-width: 1440px;
+	container-type: inline-size;
+}
+
+.container {
+	container-type: inline-size;
 }
 
 .hero {
@@ -120,11 +125,11 @@ p {
 	color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (max-width: 768px) {
+@container (max-width: 768px) {
 	.mobileOnly {
 		display: none;
 	}
-	.container {
+	.wrapper {
 		padding: 0 2rem;
 	}
 	.cardContainer {
