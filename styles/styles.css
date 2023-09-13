@@ -11,11 +11,6 @@
 	--desktop: 1440px;
 }
 
-/* @font-face {
-	font-family: Poppins;
-	src: url('https://fonts.google.com/specimen/Poppins');
-} */
-
 body {
 	color: var(--neautralDarkBlue);
 	font-size: 15px;
