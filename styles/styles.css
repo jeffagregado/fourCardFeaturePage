@@ -15,6 +15,7 @@ body {
 	color: var(--neautralDarkBlue);
 	font-size: 15px;
 	font-family: 'Poppins', sans-serif;
+	container-type: inline-size;
 }
 
 p {
@@ -47,7 +48,7 @@ p {
 
 .heroTitle .title01 {
 	margin-bottom: 1rem;
-	font-size: clamp(25px, 4vw, 36px);
+	font-size: clamp(24px, 4vw, 36px);
 	font-weight: 200;
 }
 
@@ -121,6 +122,9 @@ p {
 }
 
 @container (max-width: 768px) {
+	.heroTitle {
+		margin-bottom: 5.4rem;
+	}
 	.mobileOnly {
 		display: none;
 	}
@@ -130,11 +134,16 @@ p {
 	.cardContainer {
 		grid-template-columns: repeat(1, minMax(0, 100%));
 		grid-template-rows: auto;
+		gap: 23px;
 	}
 	.card {
 		display: flex;
 		height: auto;
 		flex-direction: column;
+		padding: 1.5rem;
+	}
+	.card p {
+		font-size: clamp(13px, 2vw, 15px);
 	}
 	.single-card,
 	.double-card,
@@ -147,7 +156,7 @@ p {
 		position: relative;
 		right: 0;
 		bottom: 0;
-		margin-top: 3rem;
+		margin-top: 2rem;
 		align-self: flex-end;
 	}
 }
